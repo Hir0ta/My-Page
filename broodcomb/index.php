@@ -1,14 +1,15 @@
 <div class="panel-body d-flex p-2">
-    <div class="row">
-        <div class="col-xs-12 col-md-12">
+    <!--<div class="row">
+        <div class="col-xs-12 col-md-12">-->
             <form id="myForm">
             <div class="sizeChange">
                 <p>Type the size:</p><input type="text" id="size" value="">
-            </div>
-            <div class="colorChange">
-                <p>Type a color:</p><input type="text" id="color" value="yellow">
                 <input type="submit" id="change">
             </div>
+            <!--<div class="colorChange">
+                <p>Type a color:</p><input type="text" id="color" value="yellow">
+                <input type="submit" id="change">
+            </div>-->
             </form>
         </div>
         <div class="col-xs-12 col-md-12">
@@ -18,8 +19,10 @@
                     var canvas = document.getElementById('myCanvas');
                     var context = canvas.getContext('2d');
                     var size = $("#size").val();
-                    var color = '"' + $("#color").val() + '"';
-                    var space= 3 ;
+                    //var color = '"' + $("#color").val() + '"';
+                    var color = "yellow";
+                    console.log(color);
+                    var space= 3;
                     canvas.width = window.innerWidth;
                     canvas.height = window.innerHeight + 3*size;
                     var numberOfSides = 6;
@@ -36,6 +39,7 @@
                         context.lineTo (Xcenter + size * Math.cos(i * 2 * Math.PI / numberOfSides), Ycenter + size * Math.sin(i * 2 * Math.PI / numberOfSides));
                     }
                     context.strokeStyle = color;
+                    console.log(context.strokeStyle);
                     context.lineWidth = 0.5;
                     context.stroke();
                     return;
@@ -60,11 +64,8 @@
                     event.preventDefault();
                     $(document).ready(function(){
                         $("#change").on("click",function(){
-                            
                             broodComb();
-                            
                         });
-                        event.preventDefault();
                     });
                 });
             </script>
