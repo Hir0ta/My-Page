@@ -2,7 +2,7 @@
 My personal page
 (W.I.P.)
 
-#Built with
+# Built with
 - HTML
 - CSS
 - JavaScript
@@ -10,5 +10,5 @@ My personal page
 - PHP
 - Visual Studio Code
 
-#Live Version
+# Live Version
 https://hir0ta.000webhostapp.com/
