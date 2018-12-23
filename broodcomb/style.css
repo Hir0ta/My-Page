@@ -2,7 +2,15 @@
     width: 80%; 
     height: 60%; 
     border: 1px solid black;
+    display:block;
 }
-.Canvas{
+.myForm{
     display: block;
+    width: 20rem;
+}
+.sizeChange{
+    display: inline-block;
+}
+.colorChange{
+    display: inline-block;
 }
