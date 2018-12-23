@@ -7,6 +7,7 @@ My personal page
 - CSS
 - JavaScript
 - JQuery
+- Bootstrap
 - PHP
 - Visual Studio Code
 
