@@ -1,0 +1,8 @@
+.myCanvas{
+    width: 80%; 
+    height: 60%; 
+    border: 1px solid black;
+}
+.Canvas{
+    display: block;
+}

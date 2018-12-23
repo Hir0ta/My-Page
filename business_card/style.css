@@ -1,0 +1,55 @@
+/* Styles */
+
+body {
+  align-items: center;
+  height:100%;
+  background: url('https://scontent.fbud1-1.fna.fbcdn.net/v/t1.0-9/37964478_127440611514859_4736411774213947392_n.jpg?_nc_cat=105&_nc_ht=scontent.fbud1-1.fna&oh=b1563846a194d46e8a244f18720b11ff&oe=5CD0E2B0') no-repeat center center fixed;
+  background-size:cover;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.profile-card{
+  background-color: rgba(97, 95, 95, 0.575);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  width:480px;
+  max-width: calc(100vw - 10px);
+  color: black;
+}
+.head{
+  text-align:center;
+  width:90%;
+  margin:0 auto 10% auto
+
+}
+.content{
+  width:90%;
+  margin:0 auto;
+  padding:5% 10%;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+.profile-pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.links{
+  text-align: center;
+}
+.img-round {
+  padding: 1px;
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(50%);
+  border-radius: 50%; !important
+  margin-top: 1rem; 
+  margin-right: 0;
+  margin-left: 0;
+  height: 10rem;
+}
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
