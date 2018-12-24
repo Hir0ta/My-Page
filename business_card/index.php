@@ -12,9 +12,12 @@
       </div>
     </div>
     <div class="content">
-      <p class="about">As you can see I'm a fully geek guy! I like most of the geek stuffs: movies,series,comics,anime-manga,sci-fi,videogames. My online alterego is Hir0ta.<br>
-      I'm also a beginer front end developer,but I want to be a professional one!
+      <p class="about">
+        I am a entrant front-end developer,  I’ve just finished my studies at CodeBerry Programing School in the summer of 2018. I would  like to gain experience, but I’m interested in other technologies too.<br>
+        I’m experienced in software (system installing, configuring and maintenance) and hardware (building, maintenance, upgrade) side too.<br>
+        I’m willing to learn new things and solve new challenges. I’m looking for a job where they support my advancement and I can unfold.<br>
       </p>
+      <br>
       <section class="links"> 
         <h2>You can also find me:</h2>
         <ul class="list-unstyled list-inline">

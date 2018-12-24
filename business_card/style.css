@@ -3,7 +3,7 @@
 body {
   align-items: center;
   height:100%;
-  background: url('https://scontent.fbud1-1.fna.fbcdn.net/v/t1.0-9/37964478_127440611514859_4736411774213947392_n.jpg?_nc_cat=105&_nc_ht=scontent.fbud1-1.fna&oh=b1563846a194d46e8a244f18720b11ff&oe=5CD0E2B0') no-repeat center center fixed;
+  background: url("http://www.goldtieproductions.com/wp-content/uploads/2014/12/black-brick-wall-18482.jpg") no-repeat center center fixed;
   background-size:cover;
 }
 .container{
@@ -27,7 +27,7 @@ body {
 .content{
   width:90%;
   margin:0 auto;
-  padding:5% 10%;
+  padding:2% 10%;
   border-top: 1px solid hsla(0, 0%, 30%, .8);
 }
 .profile-pic{

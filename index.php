@@ -7,7 +7,7 @@
     <link rel="icon" href="https://i.ibb.co/w7wdZJf/HirOta.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="business_card/style.css">
     <?php
       //error handle
       ERROR_REPORTING (E_PARSE | E_ERROR);
@@ -32,7 +32,7 @@
 
   <body class="bg-dark text-light">
     <!--bg-primary:blue, bg-succes:white bg-warning:yellow, bg-info:turquoise, bg-danger:red -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-danger text-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-danger sticky-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,51 +42,72 @@
         <ul class="navbar-nav">
 
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" data-toggle="dropdown_target">
+            <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" data-toggle="dropdown_target">
               About me:
               <span class="caret"></span>
             </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
               <ul class="navbar-nav">
-                <a href="index.php?lap=business_card" class="dropdown-item text-light bg-dark">Business Card</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">Introduce</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">Hobbies</a>
               </ul>
             </div>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" data-toggle="dropdown_target">
-              My Pages:
+            <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" data-toggle="dropdown_target">
+              Pages:
               <span class="caret"></span>
             </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
               <ul class="navbar-nav">
-                <a href="index.php?lap=broodcomb" class="dropdown-item text-light bg-dark">Brood Comb</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-light bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
               </ul>
             </div>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" data-toggle="dropdown_target">
+            <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" data-toggle="dropdown_target">
+              JS Draws:
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
+              <ul class="navbar-nav">
+                <a href="index.php?lap=broodcomb" class="dropdown-item text-danger bg-dark">BroodComb</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" data-toggle="dropdown_target">
               Contact me:
               <span class="caret"></span>
             </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
               <ul class="navbar-nav">
-                <a href="tel:+36202345185" class="dropdown-item text-light bg-dark">Tel:</a>
-                <a href="mailto:kis.zoltan.cs@gmail.com" class="dropdown-item text-light bg-dark">Email:</a>
+                <a href="tel:+36202345185" class="dropdown-item text-danger bg-dark">Tel:</a>
+                <a href="mailto:kis.zoltan.cs@gmail.com" class="dropdown-item text-danger bg-dark">Email:</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">Leave a comment:</a>
               </ul>
             </div>
           </li>
@@ -98,9 +119,9 @@
     <div class="panel mx-auto container" style="display: inline-block; margin: 0px; padding: 0px; max-width: 100vw; max-height: calc(100vh - 83rem);">
       <?php
         //content from the menu
-        if ($_GET["lap"] == "") include "welcome.php";
+        if ($_GET["lap"] == "") include "business_card/index.php";
         if ($_GET["lap"] == "broodcomb") include "broodcomb/index.php";
-        if ($_GET["lap"] == "business_card") include "business_card/index.php";
+        if ($_GET["lap"] == "#") include "#";
         if ($_GET["lap"] == "link3") include "lap3.php";
         if ($_GET["lap"] == "link4") include "lap4.php";
       ?>
