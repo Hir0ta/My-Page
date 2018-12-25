@@ -7,10 +7,11 @@
       <p class = "lastResult"></p>
       <p class = "lowOrHi"></p>
       <div class="field">
-        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <label for="guessField">Enter a guess: </label><input type="number" id="guessField" class="guessField">
         <input type="submit" value="Submit" class="guessSubmit">
       </div>
     </div>
+    <br>
     <script>
       var randomNumber = Math.floor(Math.random()*100) +1;
       //debug

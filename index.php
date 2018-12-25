@@ -27,6 +27,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <style>
       *{box-sizing: border-box;}
+      body{
+        background: url("http://www.goldtieproductions.com/wp-content/uploads/2014/12/black-brick-wall-18482.jpg") no-repeat center center fixed;
+        background-size:cover;
+      }
     </style>
   </head>
 
