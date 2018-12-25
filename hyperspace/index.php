@@ -34,22 +34,22 @@
     /*JQuery script*/
     $(document).ready(function(){
       $('#white').click(function(){
-        $('.panel-body').css({'background-color':'rgba(97, 95, 95, 0.575)'});
+        $('.panel-body').css({'background-color':'black'});
         var colorButton = "white";
         hyperSpace(colorButton);
       });
       $('#blue').click(function(){
-        $('.panel-body').css({'background-color':'rgba(97, 95, 95, 0.575)'});
+        $('.panel-body').css({'background-color':'black'});
         var colorButton = "blue";
         hyperSpace(colorButton);
       });
       $('#green').click(function(){
-        $('.panel-body').css({'background-color':'rgba(97, 95, 95, 0.575)'});
+        $('.panel-body').css({'background-color':'black'});
         var colorButton = "green";
         hyperSpace(colorButton);
       });
       $('#red').click(function(){
-        $('.panel-body').css({'background-color':'rgba(97, 95, 95, 0.575)'});
+        $('.panel-body').css({'background-color':'black'});
         var colorButton = "red";
         hyperSpace(colorButton);
       });

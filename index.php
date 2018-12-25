@@ -11,7 +11,8 @@
       //error handle
       ERROR_REPORTING (E_PARSE | E_ERROR);
       //include style for the additional content
-      print '<link rel="stylesheet" type="text/css" href="' . $_GET["lap"] . '/style.css">';
+      if ($_GET["lap"] == "") {print '<link rel="stylesheet" type="text/css" href="business_card/style.css">';
+      }else{print '<link rel="stylesheet" type="text/css" href="' . $_GET["lap"] . '/style.css">';}
     ?>
     <!--For icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
@@ -30,6 +31,7 @@
   </head>
 
   <body class="bg-dark text-light">
+    <div class="construction bg-dark d-flex justify-content-center"><img src="http://www.corkysla.com/wp-content/uploads/2014/03/Website-under-construction-e1394996221240.png"></div>
     <!--bg-primary:blue, bg-succes:white bg-warning:yellow, bg-info:turquoise, bg-danger:red -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark text-danger sticky-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
@@ -119,7 +121,6 @@
       <?php
         //content from the menu
         if ($_GET["lap"] == "") include "business_card/index.php";
-        if ($_GET["lap"] == "") include "business_card/style.css";
         if ($_GET["lap"] == "broodcomb") include "broodcomb/index.php";
         if ($_GET["lap"] == "hyperspace") include "hyperspace/index.php";
         if ($_GET["lap"] == "guess_the_number") include "guess_the_number/index.php";
