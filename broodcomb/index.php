@@ -10,7 +10,7 @@
         var color = "yellow";
         var space= 3;
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight + 3*size;
+        canvas.height = window.innerHeight;
         var numberOfSides = 6;
         var Xcenter=canvas.width/2;
         var Ycenter=canvas.height/2;

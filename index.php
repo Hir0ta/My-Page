@@ -7,7 +7,6 @@
     <link rel="icon" href="https://i.ibb.co/w7wdZJf/HirOta.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="business_card/style.css">
     <?php
       //error handle
       ERROR_REPORTING (E_PARSE | E_ERROR);
@@ -61,7 +60,7 @@
             </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
               <ul class="navbar-nav">
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=guess_the_number" class="dropdown-item text-danger bg-dark">Play</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
@@ -84,7 +83,7 @@
             <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
               <ul class="navbar-nav">
                 <a href="index.php?lap=broodcomb" class="dropdown-item text-danger bg-dark">BroodComb</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=hyperspace" class="dropdown-item text-danger bg-dark">Hyperspace</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
@@ -120,9 +119,10 @@
       <?php
         //content from the menu
         if ($_GET["lap"] == "") include "business_card/index.php";
+        if ($_GET["lap"] == "") include "business_card/style.css";
         if ($_GET["lap"] == "broodcomb") include "broodcomb/index.php";
-        if ($_GET["lap"] == "#") include "#";
-        if ($_GET["lap"] == "link3") include "lap3.php";
+        if ($_GET["lap"] == "hyperspace") include "hyperspace/index.php";
+        if ($_GET["lap"] == "guess_the_number") include "guess_the_number/index.php";
         if ($_GET["lap"] == "link4") include "lap4.php";
       ?>
     </div>

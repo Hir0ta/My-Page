@@ -1,0 +1,22 @@
+body{
+    background-image: url("http://images6.fanpop.com/image/photos/37300000/saw-wallpaper-saw-37325235-1920-1080.jpg");
+    background-size: cover;
+}
+h1,h2{
+    text-align: center;
+}
+.content{
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+.game {
+    margin: 0, auto !important;
+    text-align: center !important;
+}
+.row {
+    height: 100vh;
+}
+.field{
+    width: 7rem;
+    height: 1.75rem;
+}
