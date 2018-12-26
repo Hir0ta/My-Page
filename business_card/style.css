@@ -41,13 +41,13 @@ body {
   padding: 1px;
   transition: all 0.5s ease-in-out;
   filter: grayscale(50%);
-  border-radius: 50%; !important
+  border-radius: 50%; 
   margin-top: 1rem; 
   margin-right: 0;
   margin-left: 0;
   height: 10rem;
 }
-img:hover {
-  transform: scale(1.1);
+.profilePic:hover {
+  transform: scale(1.2);
   filter: grayscale(20%);
 }

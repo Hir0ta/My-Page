@@ -1,18 +1,20 @@
   <div class="panel-body">
     <h1>Wanna play a game?</h1>
-    <p>I tell you what's gonna be: I think about a number between 1 and 100! You will try to guess it! You will have 10 try! <br> I will even tell you if your guess is low or high! If you can't guess it correctly on the 10th try...well you can restart the game! ;) </p>
+    <p>I tell you what's gonna be: I think about a number between 1 and 100! You will try to guess it! You will have 10 try! <br> 
+        I will even tell you if your guess is low or high! If you can't guess it correctly on the 10th try...well you can restart the game! ;) </p>
     <h2>Let's the game begin!<h2>
     <div class="guessContainer">
       <p class = "guesses"></p>
       <p class = "lastResult"></p>
       <p class = "lowOrHi"></p>
-      <div class="field">
+      <div class="field" id="field">
         <label for="guessField">Enter a guess: </label><input type="number" id="guessField" class="guessField">
         <input type="submit" value="Submit" class="guessSubmit">
       </div>
     </div>
-    <br>
-    <script>
+  </div>
+  <br>
+  <script>
       var randomNumber = Math.floor(Math.random()*100) +1;
       //debug
       //console.log(randomNumber);
@@ -62,7 +64,7 @@
         guessSubmit.disabled = true;
         resetButton = document.createElement("button");
         resetButton.textContent = "Start new game";
-        document.body.appendChild(resetButton);
+        document.getElementById("field").appendChild(resetButton);
         resetButton.addEventListener("click",resetGame);
       }
       //reset the game:

@@ -1,24 +1,26 @@
-
 .panel-body{
     background-image: url("img/saw.jpg");
     background-size: cover;
     color: rgba(255, 44, 44, 0.9);
     margin-top:-5rem;
-    margin-bottom: -10rem;
-    height: 100%;
-    width: 100% ;
+    margin-bottom: -10rem !important;
+    height: 100vh;
+    width: 100vw;
 }
 h1,h2{
     text-align: center;
     margin-top: 3rem !important;
 }
+p{
+    margin-left: 1rem;
+    margin-top: 2rem !important;
+}
 .guessContainer{
-    margin-top: 10rem !important;
+    margin-top: 5rem !important;
     margin-right: 1rem !important;
     margin-left: 1rem !important;
     
 }
-
 .guessField{
     width: 20rem;
 }

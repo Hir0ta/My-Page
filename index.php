@@ -28,7 +28,7 @@
     <style>
       *{box-sizing: border-box;}
       body{
-        background: url("http://www.goldtieproductions.com/wp-content/uploads/2014/12/black-brick-wall-18482.jpg") no-repeat center center fixed;
+        background: url("img/main_background.jpg") no-repeat center center fixed;
         background-size:cover;
       }
     </style>
