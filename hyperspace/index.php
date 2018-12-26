@@ -84,7 +84,7 @@
       },1000)
       $("#random").click(function(){
         $('.panel-body').css({'background-color':'black'});
-        var randomColor = setInterval(function(){ hyperSpace(randomChanger()); }, 1000);
+        var randomColor = setInterval(function(){ hyperSpace(randomChanger()); }, 300);
         $("#stop").click(function(){
         clearInterval(randomColor);
         });
