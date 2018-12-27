@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="hu">
+<html lang="eng">
   <head>
     <meta charset="utf-8">
     <title>Hir0ta</title>
     <link rel="icon" href="https://i.ibb.co/w7wdZJf/HirOta.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
     <?php
       //error handle
       ERROR_REPORTING (E_PARSE | E_ERROR);
@@ -14,6 +15,7 @@
       if ($_GET["lap"] == "") {print '<link rel="stylesheet" type="text/css" href="business_card/style.css">';
       }else{print '<link rel="stylesheet" type="text/css" href="' . $_GET["lap"] . '/style.css">';}
     ?>
+
     <!--For icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <!-- jQuery library -->
@@ -34,7 +36,7 @@
     </style>
   </head>
 
-  <body class="bg-dark text-light">
+  <body>
     <div class="construction bg-dark d-flex justify-content-center"><img src="http://www.corkysla.com/wp-content/uploads/2014/03/Website-under-construction-e1394996221240.png"></div>
     <!--bg-primary:blue, bg-succes:white bg-warning:yellow, bg-info:turquoise, bg-danger:red -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark text-danger sticky-top">
@@ -53,7 +55,7 @@
             </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
               <ul class="navbar-nav">
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">Introduce</a>
+                <a href="index.php?lap=intro" class="dropdown-item text-danger bg-dark">Introduce</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">Hobbies</a>
               </ul>
             </div>
@@ -67,6 +69,8 @@
             <div class="dropdown-menu bg-dark" aria-labelledby="dropdown_target">
               <ul class="navbar-nav">
                 <a href="index.php?lap=guess_the_number" class="dropdown-item text-danger bg-dark">Play</a>
+                <a href="index.php?lap=color_clock" class="dropdown-item text-danger bg-dark">Color Clock</a>
+                <!--<a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
@@ -74,9 +78,7 @@
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>-->
               </ul>
             </div>
           </li>
@@ -90,15 +92,15 @@
               <ul class="navbar-nav">
                 <a href="index.php?lap=broodcomb" class="dropdown-item text-danger bg-dark">BroodComb</a>
                 <a href="index.php?lap=hyperspace" class="dropdown-item text-danger bg-dark">Hyperspace</a>
+                <a href="index.php?lap=color_rect" class="dropdown-item text-danger bg-dark">Colorful Rectangle</a>
+                <!--<a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
                 <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>
+                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">###</a>-->
               </ul>
             </div>
           </li>
@@ -112,7 +114,7 @@
               <ul class="navbar-nav">
                 <a href="tel:+36202345185" class="dropdown-item text-danger bg-dark">Tel:</a>
                 <a href="mailto:kis.zoltan.cs@gmail.com" class="dropdown-item text-danger bg-dark">Email:</a>
-                <a href="index.php?lap=#" class="dropdown-item text-danger bg-dark">Leave a comment:</a>
+                <!--<a href="index.php?lap=guestbook" class="dropdown-item text-danger bg-dark">Contact me</a>-->
               </ul>
             </div>
           </li>
@@ -128,7 +130,9 @@
         if ($_GET["lap"] == "broodcomb") include "broodcomb/index.php";
         if ($_GET["lap"] == "hyperspace") include "hyperspace/index.php";
         if ($_GET["lap"] == "guess_the_number") include "guess_the_number/index.php";
-        if ($_GET["lap"] == "link4") include "lap4.php";
+        if ($_GET["lap"] == "color_clock") include "color_clock/index.php";
+        if ($_GET["lap"] == "color_rect") include "color_rect/index.php";
+        if ($_GET["lap"] == "intro") include "intro/index.php";
       ?>
     </div>
   </body>

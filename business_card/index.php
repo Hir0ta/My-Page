@@ -2,7 +2,7 @@
   <div class="mx-auto profile-card">
     <div class="head">
       <div class="profile-pic">
-        <img class="profilePic img-responsive img-round center" src="https://i.imgur.com/OXmW2Mj.jpg" alt="profile pic" style="margin-top: 1rem; height: 10rem;">
+        <img class="profilePic img-responsive img-round center" src="img/business_profile.jpg" alt="profile pic" style="margin-top: 1rem; height: 10rem;">
       </div>
       <div class="name-headline">
         <h1>Kis Zoltán</h1>
