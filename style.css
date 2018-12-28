@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url("img/main_background.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+.container{
+    display: inline-block;
+    margin-bottom: 5rem;
+    padding: 0px !important;
+    max-width: 100vw !important;
+    max-height: calc(100vh - 83rem);
+}
+footer{
+    margin-top: 5rem !important;
+}
+a{
+    color: white !important;
+}
+a:hover{
+    color: red !important;
+}

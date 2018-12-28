@@ -4,5 +4,7 @@
 .panel-body {
     margin-top: -1.5rem;
 }
-
+#myCanvas{
+    width: 100%;
+}
 

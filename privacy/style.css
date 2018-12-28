@@ -1,0 +1,13 @@
+.panel-body{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 10rem;
+  }
+  .privacy::after{
+    display:block;
+    content:"";
+    background-color: grey;
+    height:1px;
+    margin: .5rem auto;
+    width: 95vw;
+  }

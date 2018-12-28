@@ -7,7 +7,7 @@
     <link rel="icon" href="https://i.ibb.co/w7wdZJf/HirOta.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
     <?php
       //error handle
       ERROR_REPORTING (E_PARSE | E_ERROR);
@@ -27,17 +27,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <style>
-      *{box-sizing: border-box;}
-      body{
-        background: url("img/main_background.jpg") no-repeat center center fixed;
-        background-size:cover;
-      }
-    </style>
   </head>
 
   <body>
-    <div class="construction bg-dark d-flex justify-content-center"><img src="http://www.corkysla.com/wp-content/uploads/2014/03/Website-under-construction-e1394996221240.png"></div>
+    <div class="construction bg-dark d-flex justify-content-center"><img src="img/construction.png"></div>
     <!--bg-primary:blue, bg-succes:white bg-warning:yellow, bg-info:turquoise, bg-danger:red -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark text-danger sticky-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
@@ -123,7 +116,7 @@
       </div>
     </nav>
     <br>
-    <div class="panel mx-auto container" style="display: inline-block; margin: 0px; padding: 0px; max-width: 100vw; max-height: calc(100vh - 83rem);">
+    <div class="panel container">
       <?php
         //content from the menu
         if ($_GET["lap"] == "") include "business_card/index.php";
@@ -133,7 +126,19 @@
         if ($_GET["lap"] == "color_clock") include "color_clock/index.php";
         if ($_GET["lap"] == "color_rect") include "color_rect/index.php";
         if ($_GET["lap"] == "intro") include "intro/index.php";
+        if ($_GET["lap"] == "terms") include "terms/index.php";
+        if ($_GET["lap"] == "privacy") include "privacy/index.php";
       ?>
     </div>
+    <footer class="panel-footer text-center bg-dark fixed-bottom">
+      <div class="wrapper">
+        <small>2018 <strong>Hir0ta</strong>, All Rights Reserved</small>
+        <nav class="footer-nav">
+          <a href="index.php">Back to Top</a>
+          <a href="index.php?lap=terms">Terms of Use</a>
+          <a href="index.php?lap=privacy">Privacy</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
