@@ -130,13 +130,15 @@
         if ($_GET["lap"] == "privacy") include "privacy/index.php";
       ?>
     </div>
-    <footer class="panel-footer text-center bg-dark fixed-bottom">
+    <footer class="panel-footer bg-dark">
       <div class="wrapper">
-        <small>2018 <strong>Hir0ta</strong>, All Rights Reserved</small>
         <nav class="footer-nav">
-          <a href="index.php">Back to Top</a>
-          <a href="index.php?lap=terms">Terms of Use</a>
-          <a href="index.php?lap=privacy">Privacy</a>
+          <small>2018 <strong>Hir0ta</strong>, All Rights Reserved</small>
+          <div class="text-center">
+            <a href="index.php">Back to Top</a>
+            <a href="index.php?lap=terms">Terms of Use</a>
+            <a href="index.php?lap=privacy">Privacy</a>
+          </div>
         </nav>
       </div>
     </footer>
